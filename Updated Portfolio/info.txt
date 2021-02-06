@@ -1,0 +1,39 @@
+fontColor: {"gradient-0":"#fc9db3","gradient-1":"#FCDFD4"}
+bgColor: {"hex":"#FFFFFF"}
+iconColor: {"gradient-0":"#fc9db3","gradient-1":"#FCDFD4"}
+sloganColor: {"hex":"#191a1d"}
+
+white:          #FFFFFF;
+gradient 1:     #fc9db3;
+gradient 2:     #FCDFD4;
+font-color:     #191a1d;
+grey:           #eff3f9;
+dark-pink:      #efa8b0;
+pink-purple:    #c79cc8;
+purple:         #a89cc8;
+purple-blue:    #9bb2e1;
+blue:           #8cc9f0;
+
+
+font-link
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+font-family: 'Open Sans', sans-serif;
+
+h1  7.rem
+h2  5.2rem
+li  2.2rem
+p   3.4rem -> 2.6rem
+btn 2.8rem -> 2.2rem
+
+Different Pages
+Home Page - Basic sell and information
+Contact Page!! - Basic form for people to contact me with
+Blog Home - Just a home for all potential blog posts
+Blog posts
+Recent work pages - some static pictures and descriptions of webpages
+Packages - a short sell on how I can help and things you can expect(may or may not keep)
+
+
+
+

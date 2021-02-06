@@ -1,0 +1,355 @@
+ /*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+button, button:active, button:focus{
+    background: none;
+    border: none;
+    outline:none;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+html{
+    font-size: 62.5%;
+}
+body, button, span, ion-icon{
+    color: #191a1d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.6rem;
+    line-height: 2em;
+}
+
+h2, h3, h4, h5, h6{
+  line-height: 2em;
+}
+h2{
+    font-size: 5.2rem;
+}
+h3{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 2.8rem;
+    color: white;
+}
+h5{
+    font-size: 4.2rem;
+}
+h6, strong{
+    font-weight: bold;
+}
+p{
+    font-weight: 300;
+}
+.copyright{
+    color: #c9cdd0;
+    font-weight: 200;
+}
+.mailIcon, #errorMessage ion-icon{
+  color: white;
+}
+
+
+/*
+  ========================================
+  BACKGROUND
+  ========================================
+*/
+.gradientBg{
+    background: #fc9db3;
+    background: linear-gradient(to bottom right, #fc9db3, #FCDFD4);
+    color: white;
+}
+.whiteBg{
+    background: white;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+.twitter{
+    background: #8cc9f0;
+}
+.linkedIn{
+    background: #a89cc8;
+}
+.mail{
+    background: #fc9db3;
+}
+
+/*
+  ========================================
+  SPECIFIC ITEMS
+  ========================================
+*/
+.whiteLogo{
+    height: 50px;
+}
+.iconsWrapper *{
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 1rem;
+}
+button{
+    border-radius: 10px;
+    border: 2px solid #191a1d;
+    width: 300px;
+    height: 60px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+#submitBtn{
+    background: #8cc9f0;
+    border: 2px solid #8cc9f0;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+.whiteLine{
+    background: white;;
+    height: 5px;
+    width: 40%;
+    border-radius: 10px;
+}
+.mailIcon{
+  font-size: 10rem;
+}
+.hidden{
+  transform: scale(1);
+}
+/*
+  ========================================
+  FORMATTING
+  ========================================
+*/
+footer, main, .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+  align-self: center;
+  text-align: center;
+}
+p{
+    padding-bottom: 1.5rem;
+}
+main{
+    padding: 0 12%;
+}
+.content{
+    padding: 5% 0;
+}
+
+.mailWrapper{
+  padding: 3%;
+}
+header.laptop{
+      display: flex;
+      padding: 2%;
+}
+.topPage{
+    min-height: 60vh;
+    content: contain;
+}
+.mainLogoWrapper{
+      position: relative;
+      top:20%;
+      bottom: 50%;
+      padding: 5% 10% 0% 10%;
+}
+.miniLogoWrapper{
+     display: flex;
+     flex-grow: 4;
+}
+.laptop nav{
+     display: flex;
+     flex-grow: 1;
+ }
+.miniNav ul{
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+ }
+ .topDivider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4% 5%;
+ }
+
+.mailWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 3%;
+  width: 100%;
+  background: white;
+  color: #191a1d;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+input, textarea{
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+  caret-color: #FC9DB3;
+  background: none;
+  outline: none;
+  border: 2px solid #191a1d;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+.lastInput{
+  resize: vertical;
+  min-height: 10rem;
+}
+.iconsWrapper{
+  display: flex;
+  justify-content: space-around;
+}
+header, footer, main ,body{
+  width: 100%;
+}
+.submitBtnWrapper{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+input:active, input:focus, textarea:active, textarea:focus{
+  border: 2px solid #FC9DB3;
+}
+.professionalEmail:hover{
+  color: #191a1d;
+  transition: 1s;
+}
+
+li:hover{
+    color:#f3f6fa;
+    transition: 0.3s;
+}
+body *::selection{
+  background: #FC9DB3;
+  color: white;
+}
+.btnHover:hover{
+  filter: brightness(1.11);
+  transition: .7s;
+  cursor: pointer;
+}
+.btnHover:active, .btnHover:focus{
+  background: #FCDFD4;
+  border-color: #FCDFD4;
+  outline: none;
+  filter: brightness(1);
+}
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media all and (max-width:1249px){
+  h2{
+    font-size: 4rem;
+  }
+  p{
+    font-size: 2rem;
+  }
+}
+@media all and (max-width:700px){
+  .miniLogoWrapper{
+    display: none;
+  }
+  .submitBtnWrapper{
+    width: 100%;
+  }
+  .submitBtn{
+    width: 100%;
+  }
+}

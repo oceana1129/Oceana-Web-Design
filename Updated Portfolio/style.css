@@ -1,0 +1,907 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+button, button:active, button:focus{
+    background: none;
+    border: none;
+    outline:none;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE FONTS
+  ========================================
+*/
+html{
+    font-size: 62.5%;
+}
+body, button, span, ion-icon{
+    color: #191a1d;
+    background:#eff3f9;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.6rem;
+    line-height: 2em;
+}
+h2, h3, h4, h5, h6{
+  line-height: 2em;
+}
+h2{
+    font-size: 5.2rem;
+}
+h3{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 2.8rem;
+    color: white;
+}
+h4{
+    font-size: 4.2rem;
+}
+h6, strong{
+    font-weight: bold;
+}
+p{
+    font-weight: 300;
+}
+.number{
+    color: #c9cdd0;
+    font-weight: bold;
+    padding: 0 1rem 1rem 1rem;
+    display: inline;
+}
+.copyright{
+    color: #c9cdd0;
+    font-weight: 200;
+}
+.justify{
+    text-align: justify;
+}
+
+
+/*
+  ========================================
+  BACKGROUND
+  ========================================
+*/
+.whiteBg{
+    background: white;
+    border-radius: 8px;
+    padding: 5%;
+    color: #191a1d;
+}
+.gradientBg{
+    background: #fc9db3;
+    background: linear-gradient(to bottom right, #fc9db3, #FCDFD4);
+    color: white;
+}
+.plan{
+    background: #fc9db3;
+}
+.design{
+    background: #c79cc8;
+}
+.build{
+    background: #a89cc8;
+}
+.train{
+    background: #9bb2e1;
+}
+.launch{
+    background: #8cc9f0;
+}
+ion-icon{
+    background: none;
+}
+/*
+  ========================================
+  SPECIFIC ITEMS
+  ========================================
+*/
+.whiteLogo{
+    height: 50px;
+}
+.line{
+    background: #fc9db3;
+    background: linear-gradient(to bottom right, #fc9db3, #FCDFD4);
+    height: 5px;
+    width: 150px;
+    min-width: 150px;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+.miniWhiteLine{
+    background: white;
+}
+.menuOutline{
+  color: #fc9db3;
+  font-size: 5rem;
+}
+.padTop{
+    margin-top: 3rem;
+}
+.round{
+    border-radius: 50%;
+    border: 15px solid #eff3f9;
+    box-shadow: 0 0 0 2px white;
+}
+.round ion-icon{
+    font-size: 150px;
+    padding: 10%;
+    border-radius: 50%;
+    background: #eff3f9;
+    box-shadow: 0 0 0 2px #eff3f9;
+    align-self: center;
+    justify-self: center;
+}
+.miniSolution .round{
+    padding: 5%;
+    height: 250px;
+    width: 250px;
+    border: 5px solid white;
+    box-shadow: 0 0 0 2px #eff3f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-radius: 10px;
+    border: 2px solid #191a1d;
+    width: 300px;
+    height: 60px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+.contactBtn{
+    background: #8cc9f0;
+    border: 2px solid #8cc9f0;
+    color: white;
+}
+.moreBtn{
+    color: white;
+    border: 2px solid white;
+    width: 200px;
+}
+.svgWrapper{
+    height: 50px;
+    width: 50px;
+}
+.testimonial img{
+    height: 150px;
+    width: 150px;
+    border: 10px solid #eff3f9;
+}
+.column h3{
+    display: inline;
+}
+.personalPhoto{
+    width: 33%;
+    min-width: 225px;
+    border-radius: 8px;
+    float: left;
+    padding: 0px 2rem 1rem 0;
+}
+.whiteLine{
+    background: white;
+    height: 5px;
+    width: 40%;
+    border-radius: 10px;
+}
+.mailIcon, .heartIcon{
+  font-size: 10rem;
+  color: white;
+}
+
+
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+.portfolioImgWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    content: contain;
+}
+p{
+    padding-bottom: 1.5rem;
+}
+main{
+    padding: 0 12%;
+}
+.padBottomAndTop{
+    margin: 4% 0 6% 0;
+}
+.content{
+    padding: 10% 0;
+}
+.centerMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textCenter{
+    text-align: center;
+    align-content: center;
+}
+
+
+header.laptop{
+      display: flex;
+      padding: 2%;
+}
+.topPage{
+    min-height: 60vh;
+    content: contain;
+}
+.mainLogoWrapper{
+      position: relative;
+      top:20%;
+      bottom: 50%;
+      padding: 5% 10% 0% 10%;
+}
+.miniLogoWrapper{
+     display: flex;
+     flex-grow: 4;
+}
+.laptop nav{
+     display: flex;
+     flex-grow: 1;
+ }
+.miniNav ul{
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .topDivider{
+    padding: 4% 5%;
+ }
+ .topDivider button{
+     margin: 5rem 0;
+ }
+ li{
+     padding: 0 1rem;
+ }
+
+.problem{
+     display: flex;
+     justify-content: space-between;
+     flex-flow: wrap;
+}
+.problem .mainText{
+    width: 60%;
+}
+.problem h2, .problem .line, .problem button, .problem p{
+    align-self: flex-start;
+}
+
+.problem .imgWrapper{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.problem img{
+    align-self: center;
+    justify-self: center;
+}
+
+.miniSolutionWrapper{
+    display: flex;
+}
+.miniSolution{
+    width: 33%;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-start;
+}
+.processImages{
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+}
+.plan{
+    border-radius: 8px 0 0 8px;
+}
+.launch{
+    border-radius: 0 8px 8px 0;
+}
+.process{
+    width: 20%;
+    height: 200px;
+    transition:0.5s;
+    cursor: pointer;
+}
+.subText{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-height: 300px;
+    overflow: hidden;
+}
+.designSVG{
+    position:relative;
+    left: 20%;
+}
+
+.column{
+    padding: 1rem;
+    width: 50%;
+    min-width: 600px;
+    text-align: center;
+    content: contain;
+    transform: scale(1);
+    transition: 0.4s ease-in;
+    position: relative;
+}
+#plan{
+    position: relative;
+    left: 25%;
+}
+#design{
+    position: relative;
+    right: 25%;
+}
+#build{
+    position: relative;
+    left: 25%;
+    bottom: 250px;
+}
+#train{
+    position: relative;
+    right: 25%;
+    bottom: 250px;
+}
+#launch{
+    position: relative;
+    bottom: 500px;
+}
+
+
+.fullPortfolio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    content: contain;
+} 
+.portfolio{
+    content: contain;
+}
+.portfolioImgWrapper{
+    display: block;
+    margin-bottom: 4rem;
+    width: 358px;
+    height: 255px;
+    filter: drop-shadow(-5px 5px 15px rgba(0, 0, 0, 0.25));
+}
+.portfolioImg{
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+.imgOverlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -102.5%;
+    left: 0%;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+.imgOverlay{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.imgOverlay:hover{
+   opacity: 1;
+   transform: translateY(-10px);
+   background: rgba(13,13,37, .6);
+   transition: 0.5s;
+ }
+
+
+.testimonial{
+    padding: 5% 17%;
+    text-align: center;
+}
+
+.iconsWrapper *{
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 1rem;
+}
+.twitter{
+    background: #8cc9f0;
+}
+.linkedIn{
+    background: #a89cc8;
+}
+.mail{
+    background: #fc9db3;
+}
+.priceBtn{
+    margin-left: 2rem;
+}
+
+.mailWrapper{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+.btnWrapper{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+
+
+
+/*
+  ========================================
+    CONTACT
+  ========================================
+*/
+
+  .mailWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 3%;
+    width: 100%;
+    background: white;
+    color: #191a1d;
+    border-radius: 8px;
+    margin-bottom: 5%;
+  }
+  input, textarea{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 2rem;
+    caret-color: #FC9DB3;
+    background: none;
+    outline: none;
+    border: 2px solid #191a1d;
+    font-size: 2rem;
+    border-radius: 8px;
+  }
+  
+  .lastInput{
+    resize: vertical;
+    min-height: 10rem;
+  }
+  .submitBtnWrapper{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+  #submitBtn{
+    background: #8cc9f0;
+    border: 2px solid #8cc9f0;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+.whiteLogo:hover{
+-ms-transform: rotate(359deg); 
+  transform: rotate(359deg);
+  transition: 1s;
+}
+.whiteLogo, .btnHover, .professionalEmail{
+    transition: 0.7s;
+}
+.learnBtn:hover{
+    background:rgba(13,13,37, .1);
+    transition: 0.5s;
+}
+.learnBtn, .visitu, .miniSolution{
+    transition: 0.5s;
+}
+li{
+    transition: 0.3s
+}
+li:hover{
+    background: rgba(255,255,255, 0.3);
+    border-radius: 5px;
+    transition: 1s;
+}
+.visitu:hover{
+    color: #fc9db3;
+    transition: 0.5s;
+}
+.hidden{
+    transform: scale(0);
+}
+html *::selection{
+    background: #fc9db3;
+}
+.miniSolution:hover{
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+.btnHover:hover{
+    filter: brightness(1.11);
+    transition: .7s;
+    cursor: pointer;
+}
+.btnHover:active, .btnHover:focus{
+    background: #FCDFD4;
+    border-color: #FCDFD4;
+    outline: none;
+    filter: brightness(1);
+}
+input:active, input:focus, textarea:active, textarea:focus{
+    border: 2px solid #FC9DB3;
+  }
+  .professionalEmail:hover{
+    color: #191a1d;
+    transition: 1s;
+  }
+  
+/*
+  ========================================
+  MOBILE FORMATTING
+  ========================================
+*/
+.mobile, .mobile img{
+  display: none;
+}
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media only screen and (min-device-width: 2500px) and (max-device-width: 3000px){
+    html{
+        font-size: 80%;
+    }
+    button{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    .subText{
+        max-height: 350px;
+    }
+}
+@media only screen and (min-device-width: 2244px) and (max-device-width: 2250px){
+   
+    #launch{
+        bottom: 450px;
+    }
+}
+@media only screen and (min-device-width: 2250px) and (max-device-width: 2495px){
+    #build{
+        left: 475px;
+        bottom: 200px;
+    }
+    #train{
+        right: 475px;
+        bottom: 200px;
+    }
+    #launch{
+        bottom: 400px;
+    }
+}
+@media only screen and (min-device-width: 2500px) and (max-device-width: 2885px){
+    #build{
+        left: 550px;
+        bottom: 325px;
+    }
+    #train{
+        right: 550px;
+        bottom: 325px;
+    }
+    #launch{
+        bottom: 600px;
+    }
+}
+@media all (min-width: 1251px) and (max-width: 3000px){
+  main{
+    padding: 0 12%;
+  }
+}
+@media all and (max-width:1620px){
+    #plan{
+        left: 0%;
+    }
+    #design{
+        right:0px;
+        bottom: 250px;
+    }
+    #build{
+        left: 0;
+        bottom: 500px;
+    }
+    #train{
+        right: 0px;
+        bottom: 750px;
+    }
+    #launch{
+        bottom: 1000px;
+    }
+}
+@media all and (max-width:1400px){
+    html{
+        font-size: 50%;
+    }
+    #design{
+        right:0px;
+        bottom: 200px;
+    }
+    #build{
+        left: 0;
+        bottom: 400px;
+    }
+    #train{
+        right: 0px;
+        bottom: 550px;
+    }
+    #launch{
+        bottom: 750px;
+    }
+}
+@media all and (max-width:1249px){
+.laptop img{
+    display: none;
+  }
+  .mobile img{
+  display: flex;
+}
+  p{
+    font-size: 2rem;
+  }
+  .problem .mainText, .problem .imgWrapper{
+    width: 100%;
+  }
+  .problem h2, .problem .line, .problem button, .solution h2, h3, .center, .callToAction{
+    align-self: center;
+    text-align: center;
+}
+  .testimonial{
+    padding: 5% 10%;
+}
+  #design{
+    right:0px;
+    bottom: 160px;
+}
+  #build{
+    left: 0;
+    bottom: 320px;
+}
+  #train{
+    right: 0px;
+    bottom: 480px;
+}
+  #launch{
+    bottom: 650px;
+}
+}
+@media all and (max-width:1185px){
+    .miniSolutionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .miniSolution{
+        width: 60%;
+      }
+}
+@media all and (max-width:950px){
+  .miniSolutionWrapper{
+    flex-direction: column;
+  }
+  .miniSolution{
+    width: 100%;
+  }
+  .testimonial{
+    padding: 5% 0%;
+}
+  .column{
+    min-width: 300px;
+    width: 100%;
+  }
+  .portfolioImgWrapper{
+    filter: drop-shadow(-1px 1px 5px rgba(0, 0, 0, 0.25));
+  }
+}
+@media all and (max-width:700px){
+    .miniLogoWrapper{
+      display: none;
+    }
+    .btnWrapper, .contactBtn, .personalPhoto{
+      width: 100%;
+    }
+    .svgWrapper{
+        height: 30px;
+        width: 30px;
+    }
+    .process h5{
+        font-size: 15px;
+    }
+    .process{
+        height: 150px;
+    }
+    .submitBtnWrapper{
+        width: 100%;
+      }
+      .submitBtn{
+        width: 100%;
+      }
+      #design{
+        right:0px;
+        bottom: 200px;
+    }
+    #build{
+        left: 0;
+        bottom: 400px;
+    }
+    #train{
+        right: 0px;
+        bottom: 550px;
+    }
+    #launch{
+        bottom: 750px;
+    }
+  }
+@media all and (max-width: 600px){
+    html{
+        font-size: 40%;
+    }
+    .iconsWrapper *{
+      margin: 0;  
+    }
+    .portfolioImgWrapper{
+        display: block;
+        width: 358px;
+        height: 210px;
+        margin: 2rem 0;
+    }
+    section.fullPortfolio{
+        align-items: space-around;
+    }
+    .imgOverlay,.subText{
+        display: none;
+    }
+    .subText{
+        height: 100px;
+    }
+    .column{
+        display: none;
+    }
+    h1, h4, .topPage .contactBtn{
+        font-size: 26px;
+    }
+    .callToAction{
+        padding: 0 5rem;
+    }
+    .mainLogoWrapper{
+        padding-top: 10%;
+    }
+}
+@media all and (max-width: 600px){
+    .mainLogoWrapper{
+        padding-top: 15%;
+    }
+    .imgResize{
+        width: 100%;
+        height: auto;
+    }
+    .greyHover{
+        width: 100px;
+        height: 100px;
+    }
+    .miniSolution .round{
+        height: 200px;
+        width: 200px;
+    }
+    
+}
+@media all and (max-width: 325px){
+    .iconsWrapper a{
+        padding: 0;
+    }
+    .process h5{
+        font-size: 12px;
+    }
+}
+
